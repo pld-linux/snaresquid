@@ -11,7 +11,7 @@ Group:		System Environment/Daemons
 ######		Unknown group!
 URL:		http://www.intersectalliance.com/
 Source0:	http://dl.sourceforge.net/snare/%{name}-%{version}.tar.gz
-# Source0-md5:	8123f76405657e4595c250a3f09b15ee
+# Source0-md5:	d757c89e24ed354d7633893b8d607f93
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
