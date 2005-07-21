@@ -3,20 +3,25 @@
 # - read config
 # - pldize
 Summary:	A Snare Log Forwarder for arbitrary text-based logs
+Summary(pl):	Demon Snare przekazuj±cy logi dla dowolnych tekstowych logów
 Name:		snaresquid
 Version:	1.2
 Release:	0.1
 License:	GPL
-Group:		System Environment/Daemons
-######		Unknown group!
-URL:		http://www.intersectalliance.com/
+Group:		Daemons
 Source0:	http://dl.sourceforge.net/snare/%{name}-%{version}.tar.gz
 # Source0-md5:	d757c89e24ed354d7633893b8d607f93
+URL:		http://www.intersectalliance.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A Snare Log Forwarder for arbitrary text-based logs, that works with
 the System iNtrusion Analysis and Reporting Environment (SNARE).
+
+%description -l pl
+Demon Snare przekazuj±cy logi dla dowolnych tekstowych logów,
+dzia³aj±cy ze ¶rodowiskiem SNARE (System iNtrusion Analysis and
+Reporting Environment).
 
 %prep
 %setup -q
@@ -28,7 +33,7 @@ the System iNtrusion Analysis and Reporting Environment (SNARE).
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_sysconfdir}/init.d
+install -d $RPM_BUILD_ROOT/etc/rc.d/init.d
 
 %{__make} install \
 	prefix=$RPM_BUILD_ROOT
@@ -48,4 +53,4 @@ rm -r $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/snaresquid
-# %attr(754,root,root) %{_sysconfdir}/rc.d/init.d/snaresquid
+# %attr(754,root,root) /etc/rc.d/init.d/snaresquid
