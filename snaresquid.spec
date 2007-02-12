@@ -3,7 +3,7 @@
 # - read config
 # - pldize
 Summary:	A Snare Log Forwarder for arbitrary text-based logs
-Summary(pl):	Demon Snare przekazuj±cy logi dla dowolnych tekstowych logów
+Summary(pl.UTF-8):   Demon Snare przekazujÄ…cy logi dla dowolnych tekstowych logÃ³w
 Name:		snaresquid
 Version:	1.2
 Release:	0.1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A Snare Log Forwarder for arbitrary text-based logs, that works with
 the System iNtrusion Analysis and Reporting Environment (SNARE).
 
-%description -l pl
-Demon Snare przekazuj±cy logi dla dowolnych tekstowych logów,
-dzia³aj±cy ze ¶rodowiskiem SNARE (System iNtrusion Analysis and
+%description -l pl.UTF-8
+Demon Snare przekazujÄ…cy logi dla dowolnych tekstowych logÃ³w,
+dziaÅ‚ajÄ…cy ze Å›rodowiskiem SNARE (System iNtrusion Analysis and
 Reporting Environment).
 
 %prep
