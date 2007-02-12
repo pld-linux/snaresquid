@@ -3,7 +3,7 @@
 # - read config
 # - pldize
 Summary:	A Snare Log Forwarder for arbitrary text-based logs
-Summary(pl.UTF-8):   Demon Snare przekazujący logi dla dowolnych tekstowych logów
+Summary(pl.UTF-8):	Demon Snare przekazujący logi dla dowolnych tekstowych logów
 Name:		snaresquid
 Version:	1.2
 Release:	0.1
