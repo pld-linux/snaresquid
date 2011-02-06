@@ -39,7 +39,7 @@ install -d $RPM_BUILD_ROOT/etc/rc.d/init.d
 	prefix=$RPM_BUILD_ROOT
 
 %clean
-rm -r $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 # %post
 # chkconfig --add snaresquid
